@@ -68,9 +68,10 @@ public class HTMLParsing {
 				}
             */
 			//선택자 이용	
-			Elements elements = document.select("");
-			for(int i = 0; i <elements.size(); i++){
-				
+			Elements elements = document.select("#main-top > div.main-top > div.main-top-article > div > h4 > a");
+			for(int i=0; i<elements.size(); i++) {
+				Element element = elements.get(i);
+				System.out.println(element.text());
 			}
 				
 				

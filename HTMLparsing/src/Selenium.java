@@ -3,11 +3,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
+//selenium은 웹 앱을 테스트하기 위한 도구
 public class Selenium {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// url은 크롬드라이버가 위치한 드라이버
 		System.setProperty("webDriver.chrome.driver", "C:\\Users\\user\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		//드라이버 로드
 		WebDriver driver = new ChromeDriver();

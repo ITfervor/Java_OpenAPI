@@ -40,7 +40,7 @@ public class MariaDB {
 			e.printStackTrace();
 		}
 		// 2.데이터 베이스 접속 - java.sql.Connection
-		// 정보를 "" 안에 직접삽입해주어도 사용 가능
+		// 정보를 "" 안에 직접삽입해주어도 사용 가능 보안문제로 인해 직접 삽입하지는 않음
 		try (Connection con = DriverManager.getConnection(url, id, password)) {
 			System.out.println(con);
 		} catch (Exception e) {
